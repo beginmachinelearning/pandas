@@ -21,3 +21,12 @@ river_frame['additional_column'] = np.arange(5)
 river_frame.describe()
 
 river_frame['length'].describe()
+
+#delete a column
+del river_frame['additional_column']
+
+#create new column with conditional value
+river_frame['huge_river']=river_frame['length']>=1800
+
+#Transpose
+river_frame.T
