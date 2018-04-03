@@ -22,11 +22,17 @@ river_frame.describe()
 
 river_frame['length'].describe()
 
-#delete a column
-del river_frame['additional_column']
+
 
 #create new column with conditional value
 river_frame['huge_river']=river_frame['length']>=1800
 
 #Transpose
 river_frame.T
+
+#delete a column
+del river_frame['additional_column']
+
+#delete rows, notice the double square brackets
+
+river_frame.drop(river_frame.index[[0,1]])
