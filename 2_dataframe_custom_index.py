@@ -7,7 +7,8 @@ river_dict = {'river': ['Missouri', 'Mississippi', 'Yukon', 'Rio Grande', 'Arkan
 river_frame = pd.DataFrame(river_dict, index=['river1', 'river2','river3','river4','river5',])
 #Override alphabetical columns and Set Column order
 river_frame =pd.DataFrame(river_dict, columns=['river', 'length', 'state'], index=['river1', 'river2','river3','river4','river5',])
-#Look up by index
+
+#Look up by label index
 river_frame.loc['river1']
 
 #Get all indices
