@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-import random
+
 
 river_dict = {'river': ['Missouri', 'Mississippi', 'Yukon', 'Rio Grande', 'Arkansas'],
         'length': [2341, 2202, 1979, 1759, 1450],
@@ -16,4 +16,6 @@ river_frame['length'].sort_values()
 
 #Sort based on values for one column, but display all columns
 river_frame.sort_values(by='length')
+
+
 
