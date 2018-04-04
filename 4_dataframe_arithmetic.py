@@ -26,3 +26,10 @@ my_df.pow(2)
 
 #Using NumPy Abs
 np.abs(my_df.sub(10))
+
+#Sum, defaults to axis 0, Sum one column at a time
+df_2d=pd.DataFrame(np.arange(9).reshape(3,3))
+df_2d.sum()
+
+#Sum, one row at a time
+df_2d.sum(axis=1)
