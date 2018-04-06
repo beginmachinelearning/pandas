@@ -25,3 +25,9 @@ df=pd.read_csv("datasets/text_data.txt", delim_whitespace=True)
 
 #Write to a file
 df.to_csv("datasets/write_csv.csv")
+
+
+df=pd.read_csv("datasets/Social_Network_Ads.csv")
+
+#Write to a file, only specific columns
+df.to_csv("datasets/write_csv.csv", columns=['Gender', 'Age'])
