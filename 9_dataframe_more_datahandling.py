@@ -30,7 +30,10 @@ river_frame.drop_duplicates(inplace=True)
 river_frame.drop_duplicates(inplace=True, keep='last')
 
 bins = [0, 15, 30, 45, 60, 80]
-cats = pd.cut(titanic_df['Age'], bins)
-
+age_brackets = pd.cut(titanic_df['Age'], bins)
+#Create new column for age bracket based on Age segragated into bins
 titanic_df['AgeBracket']=pd.cut(titanic_df['Age'], [0, 15, 50, 80], labels=['15 and below', 'From 16 to 50', 'Above 50'])
-pd.value_counts(cats)
+
+#Create 4 equal ranged bins
+age_brackets_4 = pd.cut(titanic_df['Age'], 4)
+age_brackets_4.value_counts()
