@@ -13,6 +13,6 @@ my_array_with_duplicates=pd.Series([3, 2, 5, 3, 7, 2, 6, 8, 9, 11])
 my_array_with_duplicates.rank()
 
 #3 repitions does not show a .666
-my_array_with_duplicates=pd.Series([3, 2, 5, 3, 7, 2, 2, 8, 9, 11])
+my_array_with_duplicates=pd.Series([3, 2, 5, 3, 7, 2, 2, 2, 9, 11])
 
 my_array_with_duplicates.rank()
